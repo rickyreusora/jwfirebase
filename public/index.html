@@ -382,7 +382,7 @@
 
   async function loadJWPlayerKey() {
     try {
-      const docRef = doc(db, "config", "jwplayer");
+      const docRef = doc(db, "jwkey", "jwplayer");
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
         const data = docSnap.data();
